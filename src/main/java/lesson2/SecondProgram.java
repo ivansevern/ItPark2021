@@ -4,13 +4,13 @@ public class SecondProgram {
 
     public static void main(String[] args) {
 
-        /*int sum = sum(18, 2);
+        int sum = sum(18, 2);
 
         int sub = subtraction(18, 2);
 
         int mult = multiplication(18, 2);
 
-        int div = division(18, 2);*/
+        int div = division(18, 2);
     }
 
     public static int sum(int arg1, int arg2) {
@@ -39,14 +39,4 @@ public class SecondProgram {
         System.out.println("Результат деления: " + arg1 + " / " + arg2 + " = " + div);
         return div;
     }
-
-
-
-
-
-   /* public static long multiplyAndSumma(int arg1) {
-        int result = 3 * arg1 + 15;
-        result = result - 38;
-        return result;
-    }*/
 }
