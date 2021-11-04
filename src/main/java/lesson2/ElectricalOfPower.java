@@ -26,7 +26,8 @@ public class ElectricalOfPower {
 
         double U = 380;
         double P = (korOf380 * U * I * cosφ) / 1000;
-        System.out.println("Для трехфазной сети: P = " + P + " кВт");
+        String format = String.format("%.2f", P);
+        System.out.println("Для трехфазной сети: P = " + format + " кВт");
         return P;
     }
 
@@ -34,7 +35,8 @@ public class ElectricalOfPower {
 
         double U = 220;
         double P = (U * I * cosφ) / 1000;
-        System.out.println("Для однофазной сети: P = " + P + " кВт");
+        String format = String.format("%.2f", P);
+        System.out.println("Для однофазной сети: P = " + format + " кВт");
         return P;
     }
 }
