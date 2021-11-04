@@ -4,16 +4,20 @@ public class SecondProgram {
 
     public static void main(String[] args) {
 
-        int sum = sum(18, 2);
+        int arg1 = 20;
+        int arg2 = 10;
 
-        int sub = subtraction(18, 2);
+        int sum = summa(arg1, arg2);
 
-        int mult = multiplication(18, 2);
+        int sub = subtraction(arg1, arg2);
 
-        int div = division(18, 2);
+        int mult = multiplication(arg1, arg2);
+
+        int div = division(arg1, arg2);
+
     }
 
-    public static int sum(int arg1, int arg2) {
+    public static int summa(int arg1, int arg2) {
 
         int sum = arg1 + arg2;
         System.out.println("Результат сложения: " + arg1 + " + " + arg2 + " = " + sum);
