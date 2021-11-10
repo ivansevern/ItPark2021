@@ -26,6 +26,7 @@ public class ThirdProgram {
         int n = scanner.nextInt();
         pow(a, b, c);
         factorial(n);
+
     }
 
     public static void pow(int a, int b, int c) {
