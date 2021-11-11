@@ -8,20 +8,34 @@ import java.util.Scanner;
 *  */
 public class FourthProgram {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число для расчета его корня: ");
-        int sqrt = scanner.nextInt();
-        System.out.println("Корень числа: " + sqrt + " = " + kor(sqrt));
+        text();
     }
 
     public static int kor(int n) {
-        int num;
-        int sqrt = n/2;
-        do {
-            num = sqrt;
-            sqrt = (num+(n/num)) /2;
+        if (n<2) return n;
+        int i = 1;
+        while (i * i <= n) {
+            if (i * i <= 0) break;
+            i++;
         }
-        while ((num-sqrt) != 0);
-        return sqrt;
+        return --i;
+    }
+
+    public static void text() {
+        Scanner scanner = new Scanner(System.in);
+        int sqrt;
+        do {
+            System.out.print("Введите число для расчета его корня: ");
+            while (!scanner.hasNextInt()) {
+                System.out.println("Вы ввели некоректное значение!");
+                scanner.next();
+            }
+            sqrt = scanner.nextInt();
+            if (sqrt <= 0) {
+                System.out.println("Значение не может быть 0 и меньше 0");
+                scanner.next();
+            }
+        } while (sqrt <= 0);
+        System.out.println("Корень целого числа: " + sqrt + " = " + kor(sqrt));
     }
 }
