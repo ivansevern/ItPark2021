@@ -15,7 +15,7 @@ public class DigitsFibonacci {
         int secondValue = 1;
 
         do {
-            System.out.print("Введите число для расчета : ");
+            System.out.print("Введите положительное число для расчета : ");
             while (!scanner.hasNextInt()) {
                 System.out.println("Вы ввели некоректное значение!");
                 scanner.next();
