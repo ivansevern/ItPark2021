@@ -9,26 +9,28 @@ import java.util.Scanner;
 
 public class DigitsFibonacci {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         int maxValue = 0;
         int lastValue = 0;
         int secondValue = 1;
 
-        Scanner scanner = new Scanner(System.in);
         do {
             System.out.print("Введите число для расчета : ");
             while (!scanner.hasNextInt()) {
                 System.out.println("Вы ввели некоректное значение!");
                 scanner.next();
             }
-        }
-        while (scanner.nextInt() < 0);
+          //  System.out.println("Вы ввели некоректное значение!");
         maxValue = scanner.nextInt();
-        System.out.println("Серия Фибоначчи " + maxValue + " чисел");
+        }
+
+        while (maxValue < 0);
         for (int i = 1; i <= maxValue; i++) {
             System.out.println(lastValue + "");
             int sum = lastValue + secondValue;
             lastValue = secondValue;
             secondValue = sum;
         }
+        System.out.println("Серия Фибоначчи " + maxValue + " чисел");
     }
 }
