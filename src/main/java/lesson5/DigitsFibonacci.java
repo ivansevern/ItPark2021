@@ -20,7 +20,6 @@ public class DigitsFibonacci {
                 System.out.println("Вы ввели некоректное значение!");
                 scanner.next();
             }
-          //  System.out.println("Вы ввели некоректное значение!");
         maxValue = scanner.nextInt();
         }
 
