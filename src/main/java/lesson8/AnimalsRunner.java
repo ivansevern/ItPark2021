@@ -8,14 +8,15 @@ package lesson8;
 */
 public class AnimalsRunner {
     public static void main(String[] args) {
-//        Animal[] dog = new Animal[]{};
-        Animal dog = new Dog();
+        Animal[] animals = new Animal[]{};
+        Animal dog = new Dog("Бобик", "brown", 2);
         dog.voice();
 
-        Animal cat = new Cat();
+        Animal cat = new Cat("Мурзик", "Black", 1);
         cat.voice();
 
-        Animal parrot = new Parrot();
+
+        Animal parrot = new Parrot("Кеша", "Yellow", 1);
         parrot.voice();
 
     }
