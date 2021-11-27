@@ -7,18 +7,15 @@ package lesson8;
 * всех животных данного массива (с простым выводом издаваемого звука в консоль).
 */
 public class AnimalsRunner {
-    public static void main(String[] args) {
-        Animal[] animals = new Animal[]{};
-        Animal dog = new Dog("Бобик", "brown", 2);
-        dog.voice();
+    public static void main(String[] args){
+        Animal[] animal = new Animal[3];
+        animal[0] = new Cat("cat");
+        animal[1] = new Dog("dog");
+        animal[2] = new Parrot("parrot");
 
-        Animal cat = new Cat("Мурзик", "Black", 1);
-        cat.voice();
-
-
-        Animal parrot = new Parrot("Кеша", "Yellow", 1);
-        parrot.voice();
-
+        for ( Animal m: animal) {
+            m.voice();
+        }
     }
 }
 
