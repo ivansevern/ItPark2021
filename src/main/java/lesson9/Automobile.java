@@ -14,7 +14,11 @@ public abstract class Automobile {
     private String model;
     private int maxDistance;
 
-    public abstract void move(int maxDistance);
+    public void move() {
+        System.out.println(maxDistance);
+    }
+
+   /* public abstract void move(int maxDistance);
 
     public String getModel() {
         return model;
@@ -35,7 +39,7 @@ public abstract class Automobile {
     public Automobile(String model, int maxDistance) {
         this.model = model;
         this.maxDistance = maxDistance;
-    }
+    }*/
 
 }
 
