@@ -37,6 +37,6 @@ public abstract class Automobile {
         this.maxDistance = maxDistance;
     }
 
-
-
 }
+
+
