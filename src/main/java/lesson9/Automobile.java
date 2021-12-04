@@ -11,32 +11,12 @@ package lesson9;
  */
 
 public abstract class Automobile {
-    private String model;
-    private int maxDistance;
+    protected String model;
+    protected int distance;
 
-    public abstract void move(int maxDistance);
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
+    public Automobile(String model, int distance) {
+        this.distance = distance;
         this.model = model;
     }
-
-    public int getMaxDistance() {
-        return maxDistance;
-    }
-
-    public void setMaxDistance(int maxDistance) {
-        this.maxDistance = maxDistance;
-    }
-
-    public Automobile(String model, int maxDistance) {
-        this.model = model;
-        this.maxDistance = maxDistance;
-    }
-
-
-
+    public abstract void move(String model);
 }
