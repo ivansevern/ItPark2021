@@ -14,9 +14,13 @@ public abstract class Automobile {
     protected String model;
     protected int distance;
 
+
+
+
+
     public Automobile(String model, int distance) {
         this.distance = distance;
         this.model = model;
     }
-    public abstract void move(String model);
+    public abstract void move(String model, int distance);
 }

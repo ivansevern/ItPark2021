@@ -7,12 +7,12 @@ public  class Truck extends Automobile{
         super(model, distance);
     }
 
-    public void move(String model) {
+    public void move(String model, int distance) {
         this.maxDistance = 1200;
         if (this.maxDistance >= this.distance) {
             System.out.println("Грузовой автомобиль " + this.model + " проедет " + this.distance);
         } else {
-            System.out.println("Столько не проедет максимальная дистанция = " + this.maxDistance);
+            System.out.println(this.model + " без запрвки может проехать, только = " + this.maxDistance);
         }
 
     }
