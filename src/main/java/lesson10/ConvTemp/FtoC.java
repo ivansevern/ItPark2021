@@ -1,8 +1,7 @@
-package lesson10;
+package lesson10.ConvTemp;
 
  interface FtoC {
      static float convertC(float n) {
          return n;
-//    return ((n * 9.0d / 5.0d) + 32.0d);
      }
  }
