@@ -20,7 +20,7 @@ package lesson11;
 *  */
 
 public class KPPRunner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException{
 
     }
 
