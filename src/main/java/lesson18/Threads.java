@@ -7,5 +7,8 @@ package lesson18;
 строку в отдельный файл (количество создаваемых файлов соответствует количеству строк в файле).
 */
 public class Threads {
+    public static void main(String[] args) {
+
+    }
 
 }
