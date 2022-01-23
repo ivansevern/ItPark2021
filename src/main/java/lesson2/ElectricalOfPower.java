@@ -1,9 +1,5 @@
 package lesson2;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 /*
         сos φ - коэффициент мощности, показывающий потребление реактивной мощности, для электромашин он равен 0,8-0,85
         Р - мощность, в кВт (1 кВт = 1000 Вт);
@@ -14,34 +10,17 @@ import lombok.NoArgsConstructor;
         Перевод Амперы в кВт по формуле  P = U*I*сosφ    - для однофазной сети
 */
 
-public class ElectricalOfPower {
+public class ElectricalOfPower implements for380, for220 {
     public static void main(String[] args) {
 
         double cosφ = 0.85;
         double I = 10;
         double korOf3 = Math.sqrt(3);
 
-        pFor380(korOf3, I, cosφ);
-        pFor220(I, cosφ);
+        for380.pFor380(korOf3, I, cosφ);
+        for220.pFor220(I, cosφ);
 
     }
 
-    public static double pFor380(double korOf380, double I, double cosφ) {
-
-        double U = 380;
-        double P = (korOf380 * U * I * cosφ) / 1000;
-        String format = String.format("%.2f", P);
-        System.out.println("Для трехфазной сети: P = " + format + " кВт");
-        return P;
-    }
-
-    public static double pFor220(double I, double cosφ) {
-
-        double U = 220;
-        double P = (U * I * cosφ) / 1000;
-        String format = String.format("%.2f", P);
-        System.out.println("Для однофазной сети: P = " + format + " кВт");
-        return P;
-    }
 }
 
