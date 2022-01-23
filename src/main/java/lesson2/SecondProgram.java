@@ -1,5 +1,13 @@
 package lesson2;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class SecondProgram {
 
     public static void main(String[] args) {

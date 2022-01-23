@@ -1,5 +1,9 @@
 package lesson2;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /*
         сos φ - коэффициент мощности, показывающий потребление реактивной мощности, для электромашин он равен 0,8-0,85
         Р - мощность, в кВт (1 кВт = 1000 Вт);
