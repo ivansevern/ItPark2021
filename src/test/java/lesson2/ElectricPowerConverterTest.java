@@ -12,7 +12,9 @@ public class ElectricPowerConverterTest {
     private ElectricalOfPower electricalOfPower;
 
     @BeforeClass
-    public static void init() { System.out.println("Начало выполнения тестов"); }
+    public static void init() { System.out.println("Начало выполнения тестов");
+
+    }
 
     @AfterClass
     public static void destroy() {
@@ -31,8 +33,14 @@ public class ElectricPowerConverterTest {
 
     @Test
     public void shouldMultiplicationPower() {
+        ElectricalOfPower electricalOfPower = new ElectricalOfPower();
+        double actualResult380 = for380.pFor380(1.73, 10,  0.85);
+        Assert.assertEquals("проверка формулы для 380 Вольт",5.59 , actualResult380, 1);
 
-        Assert.assertEquals("проверка умножения",5.59 , for380.pFor380(1.73, 10.0, 0.85));
+        actualResult380 = for380.pFor380(1.73, 20, 0.85);
+        Assert.assertEquals(11.18, actualResult380, 1);
 
+        double actualResult220 = for220.pFor220(10, 0.85);
+        Assert.assertEquals("проверка формулы для 220 Вольт", 1.87, actualResult220, 1);
     }
 }
