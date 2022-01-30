@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.net.*;
 import java.util.Scanner;
 
-public class ShowWeatherRunner {
+public class ShowWeatherRunner2 {
     public static void main(String[] args) throws URISyntaxException, IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter city");
