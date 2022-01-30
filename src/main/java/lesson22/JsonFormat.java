@@ -41,11 +41,12 @@ public class JsonFormat {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("weather_id", 0);
         jsonObject.put("name", "city"); //как подставить значение города из раннера
-        jsonObject.accumulate("name", "");
-        jsonObject.append("name", "");
+//        jsonObject.accumulate("name", "");
+//        jsonObject.append("name", "");
         jsonObject.increment("weather_id");
-        jsonObject.put("main", "Солнечно");
-        jsonObject.put("description", "Мороз трескучий, На небе ни единой тучи");
+        jsonObject.put("main", "облачно");
+        //и вывести отдельные параметры: как температуру, ветер, облачность, осадки?
+
         System.out.println(JSONObject.quote(jsonObject.toString()));
         return jsonObject.toString();
     }
