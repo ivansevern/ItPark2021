@@ -48,38 +48,40 @@ public class DbRunner {
                 DB_SETTINGS.getProperty("db.password"));
              final Statement st = connection.createStatement();
              final PreparedStatement statement = connection.prepareStatement(
-                     """
-                             
-                             
-                             select id, name, ISBN, author 
+                     """             
+                             select name , author
                              from book 
-                             
                              """)
         ) {
+
             connection.setAutoCommit(false);
             Savepoint beforeCreate = connection.setSavepoint("beforeCreate");
 
-//            st.execute("insert into book (id, name) values (156, 'New')");
+
+//            st.execute("insert into book (id, name, author) values (6, 'New2', 'unknown2')");
 
             Savepoint beforeUpdate = connection.setSavepoint("beforeUpdate");
 
-//            st.execute("update book set name  = 'New2' where  id = 156");
+//            st.execute("update book set name  = 'New2'  where  id = 5");
 
-//            statement.setString(0, "name");
+//            statement.setString(1, name); //тут не разобрался
+//            statement.setInt(1, 4); //тут 1 не понял 4 количество вывода строк таблицы
             List<Book> books = new ArrayList<>();
             try (final ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
-                    Book book = new Book(resultSet.getInt("id"), resultSet.getString("name"), resultSet.getString("ISBN"),
-                            resultSet.getString("author"));
+                    Book book = new Book(
+//                            resultSet.getInt("id"),  //убрал пока лишние данные из вывода
+                            resultSet.getString("name"),
+//                            resultSet.getString("ISBN"),
+                            resultSet.getString("author")
+                    );
                     books.add(book);
                     if (new Random().nextBoolean()) {
                         connection.rollback(beforeUpdate);
                     }
-                    System.out.println(book);
                 }
             }
             connection.commit();
-            System.out.println(books);
             return books;
         }
     }

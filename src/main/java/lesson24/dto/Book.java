@@ -11,10 +11,8 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 
 public class Book {
-    private int id;
+//    private Integer id;
     private String name;
-    private String ISBN;
+//    private String ISBN;
     private String author;
-//    private String shop;
-//    private int year;
 }
