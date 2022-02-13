@@ -31,6 +31,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
@@ -104,6 +109,7 @@
             <version>${mockito-core.version}</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
