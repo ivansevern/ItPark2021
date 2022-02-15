@@ -7,6 +7,11 @@
     <groupId>tech.itpark</groupId>
     <artifactId>itpark2021</artifactId>
     <version>1.0.0</version>
+        <parent>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>2.4.0</version>
+        </parent>
 
     <properties>
         <maven.compiler.release>17</maven.compiler.release>
@@ -60,12 +65,6 @@
         <artifactId>spring-boot-starter</artifactId>
     </dependency>
 
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>${commons-io.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>commons-lang</groupId>
@@ -135,6 +134,16 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
         <dependency>
             <groupId> org.apache.cassandra</groupId>
             <artifactId>cassandra-all</artifactId>
