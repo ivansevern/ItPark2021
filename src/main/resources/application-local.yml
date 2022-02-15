@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: it-park-app
+  main:
+    banner-mode: 'off'
+
+app:
+  arhiv:
+    enabled: true
+
+db:
+  url: jdbc:mysql://localhost:3306/db
+  login: user
+  password: password
