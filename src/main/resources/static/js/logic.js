@@ -1,0 +1,11 @@
+$(document).ready(function () {
+    $('#inputText').blur(function () {
+        let val = $(this).val();
+        if (val) {
+            // alert('????????? ???????????? ???????? ????!');
+            $('#errorLabel').attr('style', 'display: block');
+        } else {
+            $('#errorLabel').hide();
+        }
+    });
+});
