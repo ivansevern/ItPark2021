@@ -19,7 +19,7 @@ public class InputController {
 
     private final CalculatorService calculatorService;
 
-//    @RequestMapping()
+    //    @RequestMapping()
     @PostMapping("/summa")
     public ResultDto summa(@RequestParam("arg1") Integer a, @RequestParam("arg2") Integer b) {
         return new ResultDto(application, calculatorService.summa(a, b));

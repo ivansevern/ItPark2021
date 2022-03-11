@@ -1,5 +1,8 @@
 server:
   port: 8080 # default 8080
+#  servlet:
+#    context-path: /myProject
+
 spring:
   main:
     allow-circular-references: true # without that cannot start spring shell
@@ -9,7 +12,7 @@ spring:
 
   application:
     name: itpark-app
-#    titleAndBanner: 'New title for application'
+    #    titleAndBanner: 'New title for application'
     title-and-banner: 'New title for application'
 
   messages:
