@@ -15,7 +15,7 @@ $(function () {
         }
 
         if (!arg1 || !arg2) {
-            alert('??????? ????????!')
+            alert('Укажите значения!')
             return;
         }
 
@@ -23,7 +23,7 @@ $(function () {
             url: '/calculator/summa?arg1=' + arg1 + '&arg2=' + arg2,
             type: 'POST',
             success: function (result) {
-                $('#result').text('????????? ??????? ?????: ' + result.value);
+                $('#result').text('Результат расчета суммы: ' + result.value);
             }
         });
     });

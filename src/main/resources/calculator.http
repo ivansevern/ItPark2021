@@ -1,1 +1,2 @@
-POST http://localhost:8080/calculator/summa?arg1=12&arg2=25
+#POST http://localhost:8080/calculator/summa?arg1=12&arg2=25
+POST http://localhost:8080/currencyConverter/result
