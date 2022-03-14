@@ -1,7 +1,7 @@
 
 package lesson2;
 
-import lesson2.SecondProgram;
+import lesson2.HomeWork.*;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;

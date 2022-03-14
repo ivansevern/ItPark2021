@@ -1,6 +1,8 @@
 package lesson2;
 
-import lesson2.ElectricalOfPower;
+import lesson2.HomeWork.ElectricalOfPower;
+import lesson2.HomeWork.for220;
+import lesson2.HomeWork.for380;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
