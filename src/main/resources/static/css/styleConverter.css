@@ -27,10 +27,10 @@
     font-weight: 300;
 }
 
-.course-item-value.top {
+.course-item-value.bottom {
     color: rgb(255, 51, 51);
 }
 
-.course-item-value.bottom {
+.course-item-value.up {
     color: rgb(19, 189, 61);
 }
