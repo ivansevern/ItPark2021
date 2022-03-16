@@ -40,9 +40,10 @@
         }
     }
 
-    input.oninput = convertValue;
-    select.oninput = convertValue;
+        input.oninput = convertValue;
+        select.oninput = convertValue;
 
-    function convertValue() {
-        result.value = (parseFloat(input.value) / rates[select.value].Value).toFixed(2);
-    }
+        function convertValue() {
+            result.value = (parseFloat(input.value) / rates[select.value].Value).toFixed(2);
+            result.value = (parseFloat(input.value) / rates[select.value].Value).toFixed(2);
+        }
