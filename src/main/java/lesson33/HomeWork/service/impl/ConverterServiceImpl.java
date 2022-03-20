@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 public class ConverterServiceImpl implements ConverterService {
 
     @Override
-    public double result(double a, double b) {
-        return 0;
+    public double summa(double a, double b) {
+        return a / b;
     }
 }
