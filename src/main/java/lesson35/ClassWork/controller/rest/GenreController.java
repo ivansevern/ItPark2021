@@ -1,7 +1,7 @@
 package lesson35.ClassWork.controller.rest;
 
-import lesson35.dto.ResultDto;
-import lesson35.service.GenreService;
+import lesson35.ClassWork.dto.ResultDto;
+import lesson35.ClassWork.service.GenreService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;

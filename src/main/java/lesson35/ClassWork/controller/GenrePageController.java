@@ -1,9 +1,9 @@
 package lesson35.ClassWork.controller;
 
-import lesson35.dto.GenreDto;
-import lesson35.dto.GenrePageDto;
-import lesson35.service.GenreService;
-import lesson35.validator.PositiveOrZero;
+import lesson35.ClassWork.dto.GenreDto;
+import lesson35.ClassWork.dto.GenrePageDto;
+import lesson35.ClassWork.service.GenreService;
+import lesson35.ClassWork.validator.PositiveOrZero;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
