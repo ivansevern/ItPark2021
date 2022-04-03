@@ -12,7 +12,7 @@ spring:
 
   application:
     name: itpark-app
-#    titleAndBanner: 'New title for application'
+    #    titleAndBanner: 'New title for application'
     title-and-banner: 'New title for application'
 
   messages:
@@ -55,6 +55,17 @@ application:
       - И здесь должен быть текст
       - Финальный текст
 
+  cbr:
+    location: https://www.cbr-xml-daily.ru/daily_json.js
+
+springdoc:
+  packagesToScan: lesson36.ClassWork.controller
+  api-docs:
+    path: /api-docs
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
 
 #  main:
 #    banner-mode: 'off'
