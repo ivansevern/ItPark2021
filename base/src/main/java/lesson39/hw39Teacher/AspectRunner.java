@@ -1,7 +1,7 @@
 package lesson39.hw39Teacher;
 
-import hw39.dto.CityDto;
-import hw39.service.CityDictionaryService;
+import lesson39.hw39Teacher.dto.CityDto;
+import lesson39.hw39Teacher.service.CityDictionaryService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

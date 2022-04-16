@@ -1,7 +1,7 @@
 package lesson39.hw39Teacher.service.impl;
 
-import hw39.dto.CityDto;
-import hw39.service.CityDictionaryService;
+import lesson39.hw39Teacher.dto.CityDto;
+import lesson39.hw39Teacher.service.CityDictionaryService;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
