@@ -1,7 +1,7 @@
 package lesson42.ClassWork.controller.rest;
 
-import lesson42.dto.GenrePageDto;
-import lesson42.service.GenreService;
+import lesson42.ClassWork.dto.GenrePageDto;
+import lesson42.ClassWork.service.GenreService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;

@@ -1,11 +1,11 @@
 package lesson42.ClassWork.service.impl;
 
-import lesson42.dto.GenreDto;
-import lesson42.dto.GenrePageDto;
-import lesson42.mapper.GenreMapper;
-import lesson42.model.Genre;
-import lesson42.repository.GenreRepository;
-import lesson42.service.GenreService;
+import lesson42.ClassWork.dto.GenreDto;
+import lesson42.ClassWork.dto.GenrePageDto;
+import lesson42.ClassWork.mapper.GenreMapper;
+import lesson42.ClassWork.model.Genre;
+import lesson42.ClassWork.repository.GenreRepository;
+import lesson42.ClassWork.service.GenreService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

@@ -1,7 +1,7 @@
 package lesson42.ClassWork.mapper;
 
-import lesson42.dto.GenreDto;
-import lesson42.model.Genre;
+import lesson42.ClassWork.dto.GenreDto;
+import lesson42.ClassWork.model.Genre;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

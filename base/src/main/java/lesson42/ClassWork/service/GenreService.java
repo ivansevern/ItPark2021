@@ -1,7 +1,7 @@
 package lesson42.ClassWork.service;
 
-import lesson42.dto.GenreDto;
-import lesson42.dto.GenrePageDto;
+import lesson42.ClassWork.dto.GenreDto;
+import lesson42.ClassWork.dto.GenrePageDto;
 import org.springframework.data.domain.Pageable;
 
 import javax.validation.Valid;

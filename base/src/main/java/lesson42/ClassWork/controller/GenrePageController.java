@@ -1,7 +1,7 @@
 package lesson42.ClassWork.controller;
 
-import lesson42.dto.GenreDto;
-import lesson42.service.GenreService;
+import lesson42.ClassWork.dto.GenreDto;
+import lesson42.ClassWork.service.GenreService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

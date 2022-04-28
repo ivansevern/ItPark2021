@@ -1,7 +1,7 @@
 package lesson42.ClassWork.service.impl;
 
-import lesson42.service.CalculatorService;
-import lesson42.service.PrintService;
+import lesson42.ClassWork.service.CalculatorService;
+import lesson42.ClassWork.service.PrintService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
